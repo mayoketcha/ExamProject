@@ -44,7 +44,7 @@ public class GameMaster {
             r.attack(t);
         }
 
-        SuperHero sh = new SuperHero("勇者", "剣", h.hp);
+        SuperHero sh = new SuperHero("勇者", "剣", h.getHp());
         System.out.println("\nダメージを受けた勇者が突然光りだした！");
         System.out.println(sh.getName() + "はスーパーヒーローに進化した！");
         sh.attack(m);

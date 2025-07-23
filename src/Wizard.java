@@ -8,7 +8,7 @@ public class Wizard extends Character{
     }
 
     public void attack (Creature target) {
-        System.out.print(name + "は火の玉を放った！");
+        System.out.print(getName() + "は火の玉を放った！");
         System.out.println(target.getName() + "に3のダメージを与えた！");
         target.setHp(target.getHp()-3);
         mp -= 1;

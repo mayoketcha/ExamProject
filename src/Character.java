@@ -1,7 +1,7 @@
 public abstract class Character implements Creature {
 
-    String name;
-    int hp;
+    private String name;
+    private int hp;
 
     public Character(String name, int hp) {
         this.hp  = hp;
@@ -12,7 +12,6 @@ public abstract class Character implements Creature {
         if (hp < 0) {
             throw new IllegalArgumentException("初期設定に誤りがあるためキャラクターを作成できませんでした");
         }
-        this.hp  = hp;
     }
 
     public final boolean isAlive(){
