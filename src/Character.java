@@ -42,7 +42,7 @@ public abstract class Character implements Creature {
         if (hp > 0) {
             this.hp = hp;
         }  else {
-            this.hp = 0;
+            throw new IllegalArgumentException("初期設定に誤りがあるためキャラクターを作成できませんでした");
         }
     }
 }
